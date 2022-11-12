@@ -2,6 +2,10 @@ from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 from scrape_folder.scrape import scrape
+from bs4 import BeautifulSoup
+import requests
+from datetime import datetime
+import psycopg2
 
 args = {
     'owner': 'Shilpa Sivadas',
