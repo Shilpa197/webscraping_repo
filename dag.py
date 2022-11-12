@@ -1,7 +1,7 @@
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
-from scrape_folder.scrape import scrape
+from scrape_folder.scrape import scrape #Pipeline file is imported
 from bs4 import BeautifulSoup
 import requests
 from datetime import datetime
@@ -21,6 +21,6 @@ dag = DAG(
 with dag:
     ws = PythonOperator(
         task_id='scrapefunction',
-        python_callable=scrape,
+        python_callable=scrape, #scraping function is called
       
     )
