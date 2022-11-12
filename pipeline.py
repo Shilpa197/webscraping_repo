@@ -1,7 +1,3 @@
-from bs4 import BeautifulSoup
-import requests
-from datetime import datetime
-import psycopg2
 
 conn=psycopg2.connect(host="webstorage.cokr4mywcowh.us-east-1.rds.amazonaws.com", database="storage_db", user="postgres", password="admin1234")
 c=conn.cursor()
