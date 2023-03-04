@@ -1,4 +1,2 @@
 # webscraping_repo
-The goal is to build a cloud based Web Scraping platform using Python BeautifulSoup, Apache Airflow.
-Airflow runs on EC2 instances. The pipelines are written as dags in Airflow.
-The scraped data is stored in postgres db which is provisioned in Amazon RDS.
+The goal is to develop a cloud-based web scraping solution on the AWS infrastructure, utilizing Apache Airflow for pipeline orchestration, clean the data using   Python libraries, such as NumPy, Pandas. Analyse the data using machine learning techniques, Visualize the key insights in Power BI, providing actionable information for stakeholders. The platform is built with Python and incorporates RabbitMQ for efficient data processing and message queuing, with Celery as the worker. 
